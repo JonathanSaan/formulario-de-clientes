@@ -61,17 +61,10 @@ div.Radio > p{
    }
 	 
 	 
-div.Radio{
+div.Radio, span{
    float: left;
    }
 	
-	
-span{
-   float: left;
-   display: inline-block;
-    }
-	
-
 	
 #data_nascimento{
     position: absolute;
