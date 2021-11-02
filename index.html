@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+		<meta charset="UTF-8">
+		<title>Formulário de Clientes</title>
+		<link rel="stylesheet" href="form.css" />
+</head>
+<body>
+  <div id="Tudo">
+    <fieldset>
+      <legend>Customer form</legend>
+      <main>
+    <input class="nome" type="text" placeholder="Full nome"/><hr>
+    <input class="nome" type="email" placeholder="Email"/><hr>
+    <input class="nome" type="number" placeholder="Number"/><hr>
+    
+    <div class="Radio">
+       <p>Genre: </p> 
+       <input type="radio" name="citizenship"/> Masculine
+         <br>
+       <input type="radio" name="citizenship"/> Female
+         <br>
+       <input type="radio" name="citizenship" id="outro"/> Other
+         <br><br>
+     </div>
+        
+     <span>
+          <label for="data_nascimento">Birth date: </label>
+          <input type="date" name="data_nascimento" id="data_nascimento"/>
+          <br><br>
+      </span>
+    
+   <input type="text" placeholder="City"/><hr>
+   <input type="text" placeholder="State"/><hr>
+   <input type="text" placeholder="Address"/><hr>
+ 
+   </main>
+    <button type="submit">To send</button>
+   </fieldset>
+  </div>
+ 
+</body>
+</html>
