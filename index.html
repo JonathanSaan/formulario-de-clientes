@@ -1,44 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
 		<meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Formulário de Clientes</title>
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="form.css" />
+		<script src="formulario.js" type="text/javascript"></script>
 </head>
 <body>
   <div id="Tudo">
     <fieldset>
       <legend>Customer form</legend>
       <main>
-    <input class="nome" type="text" placeholder="Full nome"/><hr>
-    <input class="nome" type="email" placeholder="Email"/><hr>
-    <input class="nome" type="number" placeholder="Number"/><hr>
-    
-    <div class="Radio">
-       <p>Genre: </p> 
-       <input type="radio" name="citizenship"/> Masculine
-         <br>
-       <input type="radio" name="citizenship"/> Female
-         <br>
-       <input type="radio" name="citizenship" id="outro"/> Other
-         <br><br>
-     </div>
-        
-     <span>
-          <label for="data_nascimento">Birth date: </label>
-          <input type="date" name="data_nascimento" id="data_nascimento"/>
-          <br><br>
-      </span>
-    
-   <input type="text" placeholder="City"/><hr>
-   <input type="text" placeholder="State"/><hr>
-   <input type="text" placeholder="Address"/><hr>
- 
+      <form action="">
+          <input class="nome" name="Name" type="text" placeholder="Full name"/><hr>
+          <input class="nome" name="email" type="email" placeholder="Email"/><hr>
+          <input class="nome" name="number" type="number" placeholder="Number"/><hr>
+          
+          <div class="Radio">
+             <p>Genre: </p> 
+             <input type="radio" name="citizenship"/> Masculine
+               <br>
+             <input type="radio" name="citizenship"/> Female
+               <br>
+             <input type="radio" name="citizenship" id="outro"/> Other
+               <br><br>
+           </div>
+           <span>
+                <label for="data_nascimento">Birth date: </label>
+                <input type="date" name="data_nascimento" id="data_nascimento"/>
+                <br><br>
+            </span>
+          
+         <input type="text" placeholder="City"/><hr>
+         <input type="text" placeholder="State"/><hr>
+         <input type="text" placeholder="Address"/><hr>
+   </form>
    </main>
-    <button type="submit">To send</button>
+    <button type="submit" value="verificar" onclick="verificar()">To send</button>
    </fieldset>
   </div>
- 
 </body>
 </html>
