@@ -3,7 +3,7 @@
 <head>
 		<meta charset="UTF-8">
 		<title>Formulário de Clientes</title>
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="form.css" />
 		<script src="formulario.js" type="text/javascript"></script>
 </head>
 <body>
@@ -16,22 +16,20 @@
           <input class="nome" name="email" type="email" placeholder="Email"/><hr>
           <input class="nome" name="number" type="number" placeholder="Number"/><hr>
           
-          <div id="Radio">
+          <div id="Genre">
              <p>Genre: </p> 
+             <br />
              <input type="radio" name="citizenship"/> Masculine
-               <br>
+             <br />
              <input type="radio" name="citizenship"/> Female
-               <br>
+             <br />
              <input type="radio" name="citizenship" id="outro"/> Other
-               <br><br>
            </div>
-
-           <span>
+           <div id="nascimento">
                 <label for="data_nascimento">Birth date: </label>
                 <input type="date" name="data_nascimento" id="data_nascimento"/>
                 <br><br>
-            </span>
-
+            </div>
          <input class="txt" type="text" name="city" placeholder="City"/><hr>
          <input class="txt" type="text" name="state" placeholder="State"/><hr>
          <input class="txt" type="text" name="address" placeholder="Address"/><hr>
