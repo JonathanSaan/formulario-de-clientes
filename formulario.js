@@ -9,7 +9,7 @@ function verificar(){
     let address = document.querySelector('input[name="address"]').value;
     
     if (name == "" || email == "" || number == "" || botoes == 0 || nascimento == "" || city == "" || state == "" || address == ""){
-      window.alert('[ERRO] Verifique os dados e tente novamente')
+      window.alert('Preencha todos os dados')
     }
     
    console.log(name)
