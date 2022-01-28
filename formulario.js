@@ -11,6 +11,4 @@ function verificar(){
     if (name == "" || email == "" || number == "" || botoes == 0 || nascimento == "" || city == "" || state == "" || address == ""){
       window.alert('Preencha todos os dados!')
     }
-    
-   console.log(name)
   }
