@@ -1,91 +1,119 @@
-#charser "UTF-8";
-  *{
-    font-family: Arial, Helvetica, sans-serif;
-  }
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-	body{
-		  background-image: linear-gradient(to right, #1493DC, #113747);
-		  background-size: fixed;
-		}
-		
-		div#Tudo{
-		  background-image: linear-gradient(to right, #0B364C, #092634);
-		  color: white;
-		  margin: auto;
-		  padding: 10px;
-		  border-radius: 10px;
-		  margin-top: 40px;
-		  min-width: 100px;
-		  max-width: 400px;
-		}
-		
-		fieldset{
-		  border-color: #268EEB;
-		}
-		
-		legend{
-	  	  text-align: center;
-		    border: none;
-		    background-image: linear-gradient(to right,#298FEB ,#2E98F7);
-		    color: white;
-		    padding: 7px;
-		    border-radius: 5px;
-		  }
-		  
-		main{
-		 margin-right: 50%;
-		}
-     
-		p{
-		 display: inline-block;
-		 margin-right: 10%;
-		  }
-		  
-	 input{
-	   background: transparent;
-           border: none;
-           outline: none;
-           color: white;
-	 }
-	 
-	 div#Genre > input{
-	   display: inline-block;
-	   top: 30px;
-	   bottom: -20px; 
-	 }
-	 
-	div#nascimento{
-	   display: flex;
-	   margin-top: 10px;
-	}
-	
-	label{
-	   margin-top: 5px;
-	   min-width: 100px;
-	   text-align-last: left;
-	}
-	
-	 #data_nascimento{
-	    position: relative;
-	    min-width: 100px;
-	    height: 30px;
-	    border: none;
-	    border-radius: 7px;
-	    background-color: white;
-	    color: black;
-	    outline: none;
-	 }
-	 
-	 hr{
-	    width: 200%;
-	 }
-	 
-	 button{
-	    background-image: linear-gradient(to right, #0857B2, #3C0DA1);
-	    color: white;
-	    width: 100%;
-	    height: 40px;
-	    border: none;
-	    border-radius: 5px;
-	    margin-top: 3%;
-	 }
+body {
+  background-image: linear-gradient(to right, #1493DC, #113747);
+  background-size: fixed;
+}
+
+div#Tudo {
+  background-image: linear-gradient(to right, #0B364C, #092634);
+  color: white;
+  margin: 40px auto;
+  padding: 10px;
+  border-radius: 10px;
+  min-width: 100px;
+  max-width: 400px;
+}
+
+fieldset {
+  border-color: #268EEB;
+}
+
+legend {
+  text-align: center;
+  border: none;
+  background-image: linear-gradient(to right,#298FEB ,#2E98F7);
+  color: white;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+div#container {
+  width: 100%;
+}
+
+form{
+  position: relative;
+}
+
+p {
+  margin: 0 10% 0 0;
+}
+
+label{
+  position: absolute;
+  color: gray;
+  font-size: 12px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  margin: -25px 0 0 0;
+}
+
+label:last-child{
+  margin: 7px 0 0 -100%;
+}
+
+input:focus + label, input:valid + label {
+  transform: translateY(-32px);
+  margin: 0 0 15px 0;
+  font-size: 6px;
+}
+
+input:focus + label:last-child, input:valid + label:last-child {
+  transform: translateY(-29px);
+  margin: 28px 0 0 -100%;
+}
+
+input.nome, input.txt {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  margin: 7px 0 7px 0;
+  width: 100%;
+  outline: none;
+  color: white; 
+}
+
+div#Genre {
+  margin: 10px 0 0 0;
+}
+
+div#Genre input{
+  display: inline-block;
+  margin: 5px 0 5px 0;
+}
+
+div#nascimento {
+  display: flex;
+  margin: 10px 0 0 0;
+}
+
+div#nascimento label {
+  position: relative;
+  margin: 5px 0 0 0;
+  min-width: 100px;
+}
+
+#data_nascimento {
+  position: relative;
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 7px;
+  background-color: white;
+  color: black;
+  outline: none;
+}
+
+button {
+  background-image: linear-gradient(to right, #0857B2, #3C0DA1);
+  color: white;
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  margin: 3% 0 0 0;
+}
